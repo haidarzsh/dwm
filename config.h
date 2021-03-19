@@ -130,6 +130,11 @@ static Key keys[] = {
     	{ MODKEY,                       XK_semicolon, 	   togglemark,     {0} },
     	{ MODKEY,                       XK_o,      	   swapfocus,      {0} },
     	{ MODKEY,                       XK_u,              swapclient,     {0} },
+	{ MODKEY|ShiftMask,             XK_j,		   inplacerotate,  {.i = +1} },
+	{ MODKEY|ShiftMask,             XK_k,		   inplacerotate,  {.i = -1} },
+	{ MODKEY|ShiftMask,             XK_h,		   inplacerotate,  {.i = +2} },
+	{ MODKEY|ShiftMask,             XK_l,		   inplacerotate,  {.i = -2} },
+	{ MODKEY|ShiftMask,             XK_x,     	   killunsel,      {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
