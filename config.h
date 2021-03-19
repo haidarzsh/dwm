@@ -10,6 +10,7 @@ static const unsigned int gappov    = 5;       /* vert outer gap between windows
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int focusonwheel	    = 0;
 static const char *fonts[]          = { "Source Code Pro SemiBold:size=10" };
 static const char dmenufont[]       = "Source Code Pro SemiBold:size=10";
 static const char col_gray1[]       = "#282828";
@@ -135,6 +136,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_h,		   inplacerotate,  {.i = +2} },
 	{ MODKEY|ShiftMask,             XK_l,		   inplacerotate,  {.i = -2} },
 	{ MODKEY|ShiftMask,             XK_x,     	   killunsel,      {0} },
+	{ MODKEY|ShiftMask,             XK_f,        	   fullscreen,     {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
