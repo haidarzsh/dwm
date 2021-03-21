@@ -27,6 +27,7 @@ static const char nomarkcolor[]     = "#504945";
 static const char *colors[][4]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2, nomarkcolor },
+	[SchemeInv]  = { col_gray1, col_gray3, col_gray2, nomarkcolor },
 	[SchemeSel]  = { col_gray4, col_brown, col_orange, selmarkcolor },
 };
 
